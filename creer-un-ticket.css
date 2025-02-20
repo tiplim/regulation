@@ -1,0 +1,146 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: #e0dfdf;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.boxdiffusion {
+    display: flex;
+    flex-direction: column;
+    background-color: #dddbdb;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.form-container {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e9e8e8;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+input, select {
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+    width: 50%;
+}
+
+#details {
+    width: 100%;  
+    border: none;           
+    height: 100px; 
+    min-height: 100px;
+    padding: 10px;         
+    font-size: 16px;             
+    border-radius: 5px;      
+    resize: vertical;         
+    box-sizing: border-box;
+
+}
+
+#operation {
+    width: 100%;  
+    border: none;            
+    height: 100px; 
+    min-height: 100px; 
+    padding: 10px;             
+    font-size: 16px;          
+    border-radius: 5px;             
+    resize: vertical;         
+    box-sizing: border-box;
+}
+
+#submit {
+    border-radius: 5px;
+    border: none;
+    background-color: 
+    rgb(118, 174, 226);
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    margin: 10px;
+    transition: 0.15s;
+}
+
+.cancel {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(201, 74, 91);
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    margin: 10px;
+    transition: 0.1s;
+}
+
+.button-container {
+    display: flex;
+    padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgb(99, 154, 206);
+    color: rgb(233, 233, 233);
+}
+
+.cancel:hover {
+    background-color: rgb(184, 62, 78);
+    color: rgb(233, 233, 233);
+}
+
+.radio {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Aligne le bouton radio et le texte sur la même ligne */
+}
+
+    .radio input[type="radio"] {
+        margin: 0; /* Retire les marges par défaut */
+        padding: 0;
+        width: fit-content;
+    }
+
+    .radio label {
+        margin: 0; /* Retire les marges autour du label */
+        width: 100%;
+    }
+
+    .oui {
+        border-radius: 5px;
+        margin: 2px;
+        background-color: #e7e6e6;
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+
+    .non {
+        border-radius: 5px;
+        margin: 2px;
+        background-color: #e7e6e6;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+#emails {
+    margin-top: 10px;
+    width: 100%;
+}

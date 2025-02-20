@@ -1,0 +1,77 @@
+#retour {
+    position: fixed;
+    top: 55px;
+    left: 5px;
+    background-color: rgb(150, 150, 150);
+    color: white;
+}
+
+#retour:hover {
+    background-color: rgb(97, 97, 97);
+    color: rgb(216, 216, 216);
+}
+
+.rendu {
+    font-size: 18px;
+}
+
+.rendu {
+    justify-self: center;
+    background-color: rgb(238, 238, 238);
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 5px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Ajoutez ceci */
+}
+
+.block {
+    padding: 5px;   /* Conserver la marge si nécessaire */
+    text-align: center;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.titre {
+    display: flex;
+    background-color: rgb(206, 206, 206);
+    min-width: 30%;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+    padding: 10px;
+    text-align: start;
+    word-wrap: break-word; /* Force le texte à se couper dans la cellule */
+    overflow-wrap: break-word; /* En cas de mots longs, ils se casseront */
+    
+}
+
+.exportcons {
+    position: fixed;
+    top: 55px;
+    right: 5px;
+    border: 1px solid white;
+    background-color: #006900;
+    color: rgb(255, 255, 255);
+        border-radius: 5px;
+        transition: 0.1s;
+        border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.exportcons:hover {
+    cursor: pointer;
+    font-size: 13px;
+    border: 1px solid white;
+    background-color: #006900;
+    color: rgb(255, 255, 255);
+}

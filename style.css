@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #202020;
+    font-family: "Roboto", serif;
+    background-color: #F0F0F0;
+    margin-top: 55px;
+}
+
+.menu-filtre {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+.container {
+
+    display: flex;
+
+}
+
+.trier {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#e2e2e2;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.filtres {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#e2e2e2;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+
+
+.periode {
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #5f5f5f; 
+    border-radius:5px;
+    justify-content: center;
+    padding: 5px;
+    overflow: auto;
+}
+
+input, select {
+    border-radius: 5px;
+    border: 1px solid #8b8b8b;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.filtres button {
+    background-color:rgb(252, 252, 252);
+    color: rgb(46, 46, 46);
+    margin: 2px;
+    transition: 0.1s;
+}
+.trier button {
+    background-color:rgb(252, 252, 252);
+    color: rgb(46, 46, 46);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    transition: 0.1s;
+}
+
+.filtres button:hover {
+    cursor:pointer;
+    background-color:#e7e7e7;
+}
+.trier button:hover {
+    cursor:pointer;
+    background-color:#e7e7e7;
+}
+
+.bluebutton {
+    background-color: rgb(94, 187, 97);
+    color: white;
+}
+
+.bluebutton:hover {
+    cursor:pointer;
+    color: rgb(235, 235, 235);
+    background: rgb(79, 151, 82);
+}
+
+.redbutton {
+    background-color:rgb(201, 99, 99);
+    color: white;
+}
+
+.redbutton:hover {
+    cursor:pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(224, 69, 30);
+}
+
+.editbutton {
+    background-color:rgb(201, 155, 95);
+    color: white;
+}
+
+.editbutton:hover {
+    cursor:pointer;
+    color: rgb(230, 230, 230);
+    background-color: rgb(175, 139, 91);
+}
+
+.deconn-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(224, 69, 30);
+}
+
+.notification {
+    position: fixed;
+    top: 45%;
+    right: 48%;
+    background-color: #4CAF50; /* Couleur verte pour le succès */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+    z-index: 9999;
+}
+
+/* Lorsque la notification devient visible */
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optionnel : animation pour la disparition de la notification */
+@keyframes slideUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+#export_button {
+    border: 1px solid white;
+    background-color: #006900;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    transition: 0.1s;
+    border: 1px solid white;
+
+}
+#export_button:hover {
+    cursor: pointer;
+    font-size: 13px;
+    border: 1px solid white;
+    background-color: #006900;
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    padding: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 0;
+    background-color:#5f5f5f;
+}
+
+footer a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: #f5f5f5;
+}
